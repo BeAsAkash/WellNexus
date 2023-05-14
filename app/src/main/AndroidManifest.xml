@@ -10,8 +10,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HealthCare"
+        android:theme="@style/Theme.Health_Care"
         tools:targetApi="31">
+        <activity
+            android:name=".BuyMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LabTestBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartLabActivity"
+            android:exported="false" />
         <activity
             android:name=".LabTestDetailsActivity"
             android:exported="false" />
