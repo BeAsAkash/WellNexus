@@ -20,11 +20,11 @@ public class LabTestBookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test_book);
 
-        edname=findViewById(R.id.editTextLTBFullName);
-        edaddress= findViewById(R.id.editTextLTBAddress);
-        edcontact= findViewById(R.id.editTextLTBContact);
-        edpincode=findViewById(R.id.editTextLTBPincode);
-        btnBooking=findViewById(R.id.buttonLTBBooking);
+        edname=findViewById(R.id.editTextBMBFullName);
+        edaddress= findViewById(R.id.editTextBMBAddress);
+        edcontact= findViewById(R.id.editTextBMBContact);
+        edpincode=findViewById(R.id.editTextBMBPincode);
+        btnBooking=findViewById(R.id.buttonBMBBooking);
 
         Intent intent=getIntent();
         String[] price = intent.getStringExtra("price").toString().split(java.util.regex.Pattern.quote(":"));

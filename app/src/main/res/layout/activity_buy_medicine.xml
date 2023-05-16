@@ -37,10 +37,10 @@
         app:layout_constraintVertical_bias="0.038" />
 
     <TextView
-        android:id="@+id/textViewBMTitle"
+        android:id="@+id/textViewBMCartTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lab Test and Packages"
+        android:text="Buy Medicines"
         android:textColor="@color/LightYellow"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -59,10 +59,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBMTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMCartTitle" />
 
     <Button
-        android:id="@+id/buttonBMBack"
+        android:id="@+id/buttonBMCartBack"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="12dp"
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonBMGoToCart"
+        android:id="@+id/buttonBMCartCheckout"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="12dp"

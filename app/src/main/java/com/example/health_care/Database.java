@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class Database extends SQLiteOpenHelper {
     public Database(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
@@ -137,5 +138,23 @@ public class Database extends SQLiteOpenHelper {
         }
         db.close();
         return arr;
+    }
+
+    public int checkAppointmentExists(String username, String fullname,String address,String contact,String date,String time){
+        int result=0;
+        String str[]=new String[6];
+        str[0]=username;
+        str[1]=fullname;
+        str[2]=address;
+        str[3]=contact;
+        str[4]=date;
+        str[5]=time;
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor c =db.rawQuery("select * from orderplace where username=? and fullname=? and address=?and contactno=? and date=? and time=?",str);
+        if(c.moveToFirst()){
+           result=1;
+        }
+        db.close();
+        return result;
     }
 }

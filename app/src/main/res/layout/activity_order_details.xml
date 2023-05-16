@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.072" />
 
     <TextView
-        android:id="@+id/textViewODTitle"
+        android:id="@+id/textViewBMBPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ORDER DETAILS"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMBPackageName" />
 
     <Button
         android:id="@+id/buttonODBack"
