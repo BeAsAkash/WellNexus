@@ -1,2 +1,2 @@
 # Health_Care
-It's basically a health care application build on Android Studio using Java for MAD Practical.
+It's basically a health care application build on Android Studio using Java for my Mobile Application Development Project.
